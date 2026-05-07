@@ -19,12 +19,11 @@ jobs:
           cache: maven
 
       - name: Compilar
-        run: ./mvnw clean compile
+        run: mvn clean compile
 
       - name: Ejecutar Unit Tests y E2E
         # xvfb-run simula una pantalla en GitHub para que JavaFX pueda abrirse sin dar error
-        run: xvfb-run ./mvnw test
-
+        run: xvfb-run mvn test
   deploy:
     needs: build_and_test
     runs-on: ubuntu-latest
