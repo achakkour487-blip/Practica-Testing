@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.sudokuexam.HelloController" stylesheets="@sudoku.css" styleClass="main-container">
+
+    <GridPane fx:id="sudokuGrid"
+              styleClass="sudoku-grid"
+              VBox.vgrow="ALWAYS"
+              prefWidth="400" prefHeight="400">
+
+        <columnConstraints>
+            <ColumnConstraints percentWidth="16.666" hgrow="ALWAYS" />
+            <ColumnConstraints percentWidth="16.666" hgrow="ALWAYS" />
+            <ColumnConstraints percentWidth="16.666" hgrow="ALWAYS" />
+            <ColumnConstraints percentWidth="16.666" hgrow="ALWAYS" />
+            <ColumnConstraints percentWidth="16.666" hgrow="ALWAYS" />
+            <ColumnConstraints percentWidth="16.666" hgrow="ALWAYS" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="16.666" vgrow="ALWAYS" />
+            <RowConstraints percentHeight="16.666" vgrow="ALWAYS" />
+            <RowConstraints percentHeight="16.666" vgrow="ALWAYS" />
+            <RowConstraints percentHeight="16.666" vgrow="ALWAYS" />
+            <RowConstraints percentHeight="16.666" vgrow="ALWAYS" />
+            <RowConstraints percentHeight="16.666" vgrow="ALWAYS" />
+        </rowConstraints>
+
+    </GridPane>
+</VBox>

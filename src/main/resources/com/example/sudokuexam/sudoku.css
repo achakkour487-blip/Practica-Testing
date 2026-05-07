@@ -1,0 +1,50 @@
+
+.main-container {
+    -fx-padding: 20;
+    -fx-background-color: white;
+}
+
+
+.sudoku-grid {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+
+.celda {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 0.5px;
+    -fx-alignment: center;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+
+
+.grosor-derecho {
+    -fx-border-width: 0.5 3 0.5 0.5;
+}
+
+.grosor-izquierdo{
+    -fx-border-width: 0.5 0.5 3 0.5;
+}
+
+.thick-right.thick-bottom {
+    -fx-border-width: 0.5 3 3 0.5;
+}
+
+
+
+.celda-inmutable {
+    -fx-background-color: purple;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.celda-error {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
